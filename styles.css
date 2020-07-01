@@ -1,0 +1,394 @@
+body{
+    font-family: 'Josefin Slab', serif;
+    margin: 10px;
+    background-color: rgba(228,207,190,0.58);
+}
+
+h1{
+    padding: 8px;
+    background: lightcoral;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+main{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ---------------Banner----------------------------- */
+
+.banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: lightgrey url("img/5.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.banner h3{
+    background: #ffc66f ;
+    border-radius: 10px;
+    padding: 0 25px;
+    font-size: 50px;
+}
+
+
+/* --------------------Search box------------------------ */
+#searchbox{
+    position: fixed;
+    right: 0;
+    top: 24px;
+    width: 500px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+}
+
+#searchbox input{
+    height: 48px;
+    width: 100%;
+}
+
+
+/* -----------------------------------Inputs-------------------------------- */
+input, textarea{
+    height:30px;
+    padding: 0 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+
+/* ------------------------------Navigation------------------------------------- */
+nav{
+    height: 72px;
+    background: #ffab7a;
+    width: 100%;
+    margin-top: 10px;
+    position: fixed;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 56px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    border-radius: 8px;
+}
+
+nav a{
+    padding: 0 16px;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: firebrick;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.active{
+    color: firebrick;
+}
+
+#logo-img{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#logo-img img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#menu-img{
+    height: 100%;
+    font-size: 30px;
+    padding: 0 4px;
+    color: firebrick;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ----------------------------------Search icon-------------------------------- */
+#search-icon{
+    color: firebrick;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#search-icon:hover{
+    color: white;
+}
+
+/* ----------------------------------Slideout menu------------------------------ */
+
+#slide-menu{
+    background-color: #ffab7a;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slide-menu ul{
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slide-menu ul li{
+    padding: 8px;
+}
+
+#slide-menu a{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#slide-menu input{
+    width: 85%;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#slide-menu a:hover{
+    color: firebrick;
+    transition: 0.4s;
+}
+
+#menu-img:hover{
+    color: white;
+    transition: 0.4s;
+}
+
+
+/* ------------------------------------Sections---------------------------------- */
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+section p{
+    font-weight: bold;
+}
+
+section h3{
+    color: firebrick;
+}
+
+.section-heading{
+    font-size: 32px;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 24px;
+    color: firebrick;
+    border-radius: 8px;
+    font-weight: lighter;
+    font-family: 'Kanit', sans-serif;
+}
+
+.section-heading:hover{
+    padding: 4px 48px;
+    background: #ffab7a;
+    color: white;
+}
+
+.btn-readmore{
+    padding: 8px 24px;
+    color: firebrick;
+    border: 2px solid #ffab7a;
+    background-color: #ffab7a;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-readmore:hover{
+    color: white;
+    transition: 0.2s;
+    border: 2px solid white;
+}
+
+/* ------------------------------------Footer------------------------------------ */
+footer{
+    margin-top: 30px;
+    background-color: rgba(220,120,76,0.46);
+    padding: 8px;
+    color: firebrick;
+    display: flex;
+}
+
+footer a{
+    color: firebrick;
+}
+
+footer #left-footer {
+    flex: 1;
+    padding-left: 32px;
+}
+
+footer #media-footer a .fa-facebook-square:hover,
+footer #media-footer a .fa-twitter-square:hover,
+footer #media-footer a .fa-instagram:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+footer #media-footer ul{
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    list-style: none;
+}
+
+footer #media-footer ul li{
+    font-size: 30px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+/*-------------------------------Blogs page---------------------------------*/
+.card-meta{
+    color: firebrick;
+    font-size: 14px;
+    padding-left: 8px;
+    font-family:'Kanit', sans-serif;
+}
+
+/*-----------------------Blog post---------------------------------------------------*/
+#post-container{
+    display: flex;
+}
+
+#blogpost{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#blogpost .card{
+    width: 100%;
+}
+
+.card-meta-blogpost{
+    color: firebrick;
+    font-size: 14px;
+    padding-left: 8px;
+    font-family:'Kanit', sans-serif;
+}
+
+
+/* ----------------------------------Media Queries----------------------------- */
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+    #menu-img {
+        display: flex;
+    }
+    #slide-menu {
+        display: block;
+    }
+    #searchbox {
+        display: none;
+    }
+    #blogpost{
+        width: 100%;
+        border-left: 0;
+    }
+}
+
+@media (max-width: 719px) {
+    main {
+        width: 95%;
+    }
+    section {
+        flex-direction: column;
+    }
+    .card,
+    .card .card-img img {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    #banner h3 {
+        font-size: 20px;
+    }
+    .card {
+        text-align: center;
+    }
+    .card button{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 720px) {
+    main {
+        width: 95%;
+    }
+    .card {
+        width: 45%;
+    }
+    .card .card-img img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 100%;
+    }
+}
+
+

@@ -24,6 +24,11 @@ a{
     text-decoration: none;
 }
 
+.card-img img{
+    width: 700px;
+    height: 470px;
+}
+
 
 /* ---------------Banner----------------------------- */
 
